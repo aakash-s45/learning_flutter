@@ -1,11 +1,12 @@
 // ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures
 
+import 'package:catalog_app/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 import 'package:catalog_app/pages/home_page.dart';
 import 'package:catalog_app/pages/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-// ignore: prefer_const_constructors
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
@@ -26,13 +27,17 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: GoogleFonts.lato().fontFamily,
+      ),
       themeMode: sum,
       darkTheme: ThemeData(brightness: Brightness.dark),
       // home: HomePage(sum, fun),
+
       routes: {
         '/': (context) => Login(),
-        '/home': (context) => HomePage(sum, fun),
-        '/login': (context) => Login(),
+        MyRoutes.homeRoute: (context) => HomePage(sum, fun),
+        MyRoutes.loginRoute: (context) => Login(),
       },
     );
   }
