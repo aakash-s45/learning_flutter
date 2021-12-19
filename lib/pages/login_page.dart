@@ -2,10 +2,18 @@
 
 import 'dart:ui';
 
+import 'package:catalog_app/utils/buttons.dart';
 import 'package:flutter/material.dart';
 import '../utils/routes.dart';
+import '../utils/buttons.dart';
 
-class Login extends StatelessWidget {
+class Login extends StatefulWidget {
+  @override
+  State<Login> createState() => _LoginState();
+}
+
+class _LoginState extends State<Login> {
+  String username = '';
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -23,7 +31,7 @@ class Login extends StatelessWidget {
             ),
             Center(
               child: Text(
-                "Welcome",
+                "Welcome$username",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
@@ -35,9 +43,13 @@ class Login extends StatelessWidget {
               child: Column(
                 children: [
                   TextFormField(
+                    onChanged: (str) => setState(() {
+                      username = '! $str';
+                      if (username == '! ') username = '';
+                    }),
                     decoration: InputDecoration(
-                      labelText: "Email",
-                      hintText: "Enter your email address",
+                      labelText: "Username",
+                      hintText: "Enter your username",
                     ),
                   ),
                   TextFormField(
@@ -53,13 +65,14 @@ class Login extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            ElevatedButton(
-              child: Text("Log in"),
-              style: TextButton.styleFrom(
-                minimumSize: Size(90, 45),
-              ),
-              onPressed: () => Navigator.pushNamed(context, MyRoutes.homeRoute),
-            )
+            MyButton('Log In'),
+            // ElevatedButton(
+            //   child: Text("Log in"),
+            //   style: TextButton.styleFrom(
+            //     minimumSize: Size(90, 45),
+            //   ),
+            //   onPressed: () => Navigator.pushNamed(context, MyRoutes.homeRoute),
+            // ),
           ],
         ),
       ),
