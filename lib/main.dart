@@ -19,21 +19,25 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   var sum = ThemeMode.light;
   void fun() => setState(() {
-        if (sum == ThemeMode.light)
+        if (sum == ThemeMode.light) {
           sum = ThemeMode.dark;
-        else
+          print("changed to dark");
+        } else {
           sum = ThemeMode.light;
+          print("changed to light");
+        }
       });
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       themeMode: sum,
       darkTheme: ThemeData(brightness: Brightness.dark),
       // home: HomePage(sum, fun),
-
+      // initialRoute: MyRoutes.homeRoute,
       routes: {
         '/': (context) => Login(),
         MyRoutes.homeRoute: (context) => HomePage(sum, fun),

@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:catalog_app/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,23 +13,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Catalog App: $sum"),
       ),
-      drawer: Drawer(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            Container(
-              padding: EdgeInsets.all(20),
-              child: ElevatedButton(child: const Text("hello"), onPressed: fun),
-            ),
-            Container(
-              padding: EdgeInsets.all(20),
-              child:
-                  ElevatedButton(child: const Text("hello1"), onPressed: fun),
-            ),
-          ],
-        ),
-      ),
+      drawer: MyDrawer(fun),
     );
   }
 }
