@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures
 
 import 'package:catalog_app/utils/routes.dart';
+import 'package:catalog_app/widgets/theme.dart';
 import 'package:flutter/material.dart';
 
 import 'package:catalog_app/pages/home_page.dart';
 import 'package:catalog_app/pages/login_page.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,13 +31,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
+      theme: MyTheme.lightTheme,
       themeMode: sum,
-      darkTheme: ThemeData(brightness: Brightness.dark),
-      // home: HomePage(sum, fun),
-      // initialRoute: MyRoutes.homeRoute,
+      darkTheme: MyTheme.darkTheme,
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         '/': (context) => Login(),
         MyRoutes.homeRoute: (context) => HomePage(sum, fun),

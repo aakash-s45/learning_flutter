@@ -28,24 +28,36 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text("Home"),
+              title: Text(
+                "Home",
+                textScaleFactor: 1.2,
+                style: TextStyle(color: Colors.white),
+              ),
               leading: Icon(
                 CupertinoIcons.home,
-                color: Colors.black,
+                color: Colors.white,
               ),
             ),
             ListTile(
-              title: Text("Profile"),
+              title: Text(
+                "Profile",
+                textScaleFactor: 1.2,
+                style: TextStyle(color: Colors.white),
+              ),
               leading: Icon(
                 CupertinoIcons.profile_circled,
-                color: Colors.black,
+                color: Colors.white,
               ),
             ),
             ListTile(
-              title: Text("Mail"),
+              title: Text(
+                "Mail",
+                textScaleFactor: 1.2,
+                style: TextStyle(color: Colors.white),
+              ),
               leading: Icon(
                 CupertinoIcons.mail,
-                color: Colors.black,
+                color: Colors.white,
               ),
             ),
             ElevatedButton(child: Text("hello"), onPressed: fun),
