@@ -6,7 +6,8 @@ class CatalogModel {
         desc: "Apple  iPhone 12th gen",
         price: 999,
         color: "#33505a",
-        image: "hello"),
+        image:
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=940&hei=1112&fmt=png-alpha&.v=1604343704000"),
   ];
 }
 

@@ -1,0 +1,92 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "iPhone 12 Pro",
+            "desc": "Apple  iPhone 12th gen",
+            "price": 999,
+            "color": "#33505a",
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=940&hei=1112&fmt=png-alpha&.v=1604343704000ˀ"
+        },
+        {
+            "id": 2,
+            "name": "Pixel 6",
+            "desc": "Google Pixel 6 with Tensor Chip",
+            "price": 699,
+            "color": "#33505a",
+            "image": "https://lh3.googleusercontent.com/KgQJATWi_YcXG6ZuN-cN4cIptC1a959hUclY3Uec9kSs2HZMxg2JIjYmOgNefJLdx4uOdM08i2NXsDu-wj-zUe5iMnbxScahhUmR"
+        },
+        {
+            "id": 3,
+            "name": "Samsung S21",
+            "desc": "Samsung Galaxy S21 With Snapdragon",
+            "price": 699,
+            "color": "#33505a",
+            "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-74826/SamsungGalaxys215g.jpg"
+        },
+        {
+            "id": 4,
+            "name": "PS 5",
+            "desc": "Play Station 5 by Sony",
+            "price": 799,
+            "color": "#33505a",
+            "image": "https://www.nme.com/wp-content/uploads/2020/06/ps5-credit-sie@2000x1270.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Mi 11 Ultra",
+            "desc": "Xiaomi Mi 11 Ultra",
+            "price": 799,
+            "color": "#33505a",
+            "image": "https://www.gizmochina.com/wp-content/uploads/2021/02/mi11ultra-white.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Macbook Air",
+            "desc": "Apple Macbook Air M1 8GB",
+            "price": 899,
+            "color": "#33505a",
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-gold-select-201810?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1633027804000"
+        },
+        {
+            "id": 7,
+            "name": "Macbook Pro 13",
+            "desc": "Apple Macbook Pro M1 8GB",
+            "price": 999,
+            "color": "#33505a",
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_US?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1632948875000"
+        },
+        {
+            "id": 8,
+            "name": "Macbook Pro 14",
+            "desc": "Apple Macbook Pro M1 Pro 16GB",
+            "price": 1199,
+            "color": "#33505a",
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202110?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1632788573000"
+        },
+        {
+            "id": 9,
+            "name": "Macbook Pro 16",
+            "desc": "Apple Macbook Pro M1 Max 16GB",
+            "price": 1199,
+            "color": "#33505a",
+            "image": "https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Apple Watch 7",
+            "desc": "Apple Watch Series 7",
+            "price": 599,
+            "color": "#33505a",
+            "image": "https://www.apple.com/v/watch/ar/images/meta/gps-lte/og__n5qzveqr596m.png"
+        },
+        {
+            "id": 11,
+            "name": "Apple Airpods Pro",
+            "desc": "Apple Airpods pro Gen 1",
+            "price": 499,
+            "color": "#33505a",
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MWP22?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1591634795000"
+        }
+    ]
+}
