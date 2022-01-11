@@ -28,4 +28,7 @@ class MyTheme {
         ),
         fontFamily: GoogleFonts.lato().fontFamily,
       );
+
+  static Color lightColor = Colors.yellow.shade100;
+  static Color darkColor = Colors.indigo.shade900;
 }

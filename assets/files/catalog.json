@@ -22,7 +22,7 @@
             "desc": "Samsung Galaxy S21 With Snapdragon",
             "price": 699,
             "color": "#33505a",
-            "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-74826/SamsungGalaxys215g.jpg"
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/sm-g991bzvdmea/gallery/levant-galaxy-s21-5g-g991-sm-g991bzvdmea-388257314?$720_576_PNG$"
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "desc": "Play Station 5 by Sony",
             "price": 799,
             "color": "#33505a",
-            "image": "https://www.nme.com/wp-content/uploads/2020/06/ps5-credit-sie@2000x1270.jpg"
+            "image": "https://gmedia.playstation.com/is/image/SIEPDC/playstation-5-with-dualsense-front-product-shot-01-ps5-en-30jul20?$native--t$"
         },
         {
             "id": 5,
@@ -38,7 +38,7 @@
             "desc": "Xiaomi Mi 11 Ultra",
             "price": 799,
             "color": "#33505a",
-            "image": "https://www.gizmochina.com/wp-content/uploads/2021/02/mi11ultra-white.jpg"
+            "image": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1619082747.31483931.png"
         },
         {
             "id": 6,
@@ -46,7 +46,7 @@
             "desc": "Apple Macbook Air M1 8GB",
             "price": 899,
             "color": "#33505a",
-            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-gold-select-201810?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1633027804000"
+            "image": "https://help.apple.com/assets/6062258EBFC7E7487E19DBB0/60622591BFC7E7487E19DBBA/en_US/540d7697864354f0c0bed1741209d7f1.png"
         },
         {
             "id": 7,
@@ -54,7 +54,7 @@
             "desc": "Apple Macbook Pro M1 8GB",
             "price": 999,
             "color": "#33505a",
-            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_US?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1632948875000"
+            "image": "https://static.techspot.com/images/products/2019/laptops/org/2019-08-12-product.png"
         },
         {
             "id": 8,
@@ -62,7 +62,7 @@
             "desc": "Apple Macbook Pro M1 Pro 16GB",
             "price": 1199,
             "color": "#33505a",
-            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202110?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1632788573000"
+            "image": "https://media.croma.com/image/upload/v1634725573/Croma%20Assets/Computers%20Peripherals/Laptop/Images/245234_anjnqq.png"
         },
         {
             "id": 9,
@@ -70,7 +70,7 @@
             "desc": "Apple Macbook Pro M1 Max 16GB",
             "price": 1199,
             "color": "#33505a",
-            "image": "https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg"
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-select-202110?wid=1808&hei=1686&fmt=png-alpha&.v=1632788574000"
         },
         {
             "id": 10,
@@ -78,7 +78,7 @@
             "desc": "Apple Watch Series 7",
             "price": 599,
             "color": "#33505a",
-            "image": "https://www.apple.com/v/watch/ar/images/meta/gps-lte/og__n5qzveqr596m.png"
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKUQ3_VW_PF+watch-45-alum-midnight-nc-7s_VW_PF_WF_SI?wid=2000&hei=2000&fmt=png-alpha&.v=1632171068000,1631661679000"
         },
         {
             "id": 11,
@@ -86,7 +86,7 @@
             "desc": "Apple Airpods pro Gen 1",
             "price": 499,
             "color": "#33505a",
-            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MWP22?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1591634795000"
+            "image": "https://media.croma.com/image/upload/v1636371531/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/245081_feifhq.png"
         }
     ]
 }

@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_typing_uninitialized_variables, unused_local_variable, unnecessary_null_comparison
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_typing_uninitialized_variables, unused_local_variable, unnecessary_null_comparison, prefer_const_literals_to_create_immutables
 
+import 'package:catalog_app/widgets/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
@@ -41,43 +42,82 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // final dummylist = List.generate(50, (index) => CatalogModel.items[0]);
     return Scaffold(
-      appBar: AppBar(title: Text("Catalog App")),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-            ? GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 15,
-                  crossAxisSpacing: 15,
-                ),
-                itemBuilder: (context, index) {
-                  final item = CatalogModel.items[index];
-                  return Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    clipBehavior: Clip.antiAlias,
-                    child: GridTile(
-                      child: Image.network(item.image),
-                      header: Text(item.name),
-                      footer: Text(item.price.toString()),
-                    ),
-                  );
-                },
-                itemCount: CatalogModel.items.length,
-              )
-
-            // child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-            //     ? ListView.builder(
-            //         itemCount: CatalogModel.items.length,
-            //         itemBuilder: (BuildContext context, int index) =>
-            //             ItemWidets(item: CatalogModel.items[index]),
-            //       )
-            : Center(
-                child: CircularProgressIndicator(),
-              ),
+        body: SafeArea(
+      child: Container(
+        padding: EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            CatalogHeader(),
+            if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+              Expanded(child: CatlogList())
+            else
+              Center(child: CircularProgressIndicator())
+          ],
+        ),
       ),
-      drawer: MyDrawer(widget.fun),
+    ));
+  }
+}
+
+// header
+class CatalogHeader extends StatelessWidget {
+  const CatalogHeader({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Catalog App",
+          style: TextStyle(
+              color: MyTheme.darkColor,
+              fontSize: 40,
+              fontWeight: FontWeight.bold),
+        ),
+        Text(
+          "My Products",
+          style: TextStyle(fontSize: 15),
+        )
+      ],
+    );
+  }
+}
+
+//catalog list
+
+class CatlogList extends StatelessWidget {
+  const CatlogList({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      shrinkWrap: true,
+      itemCount: CatalogModel.items.length,
+      itemBuilder: (context, index) {
+        final catalog = CatalogModel.items[index];
+        return CatalogItem(catalog: catalog);
+      },
+    );
+  }
+}
+
+class CatalogItem extends StatelessWidget {
+  final catalog;
+  const CatalogItem({Key? key, required this.catalog})
+      : assert(catalog != null),
+        super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      // color: MyTheme.darkColor,
+      height: 130,
+      width: 100,
+      child: Row(
+        children: [Image.network(catalog.image)],
+      ),
     );
   }
 }
