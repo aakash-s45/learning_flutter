@@ -31,7 +31,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: Theme.of(context).colorScheme.primary,
       child: SingleChildScrollView(
         child: Form(
           key: _formkey,
@@ -48,9 +48,9 @@ class _LoginState extends State<Login> {
                 child: Text(
                   "Welcome$username",
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Theme.of(context).colorScheme.secondary),
                 ),
               ),
               Padding(
@@ -59,6 +59,8 @@ class _LoginState extends State<Login> {
                 child: Column(
                   children: [
                     TextFormField(
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.secondary),
                       validator: (value) {
                         if (value!.isEmpty) {
                           return "Username can't be empty";
@@ -76,6 +78,8 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                     TextFormField(
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.secondary),
                       validator: (value) {
                         if (value!.isEmpty) {
                           return "Password can't be empty";
@@ -98,25 +102,25 @@ class _LoginState extends State<Login> {
                 height: 20,
               ),
               Material(
-                color: Colors.blue.shade700,
+                color: Theme.of(context).colorScheme.secondary,
                 borderRadius: BorderRadius.circular(cond ? 25 : 5),
                 child: InkWell(
                   onTap: () => moveToHome(),
                   child: AnimatedContainer(
-                    duration: Duration(microseconds:200),
+                    duration: Duration(microseconds: 200),
                     width: cond ? 50 : 100,
                     height: 50,
                     alignment: Alignment.center,
                     child: cond
                         ? Icon(
                             Icons.done,
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.primary,
                           )
                         : Text(
                             "Log in",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                             ),
                           ),
                   ),

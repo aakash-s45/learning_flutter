@@ -1,14 +1,10 @@
+// ignore_for_file: null_closures
+
 class CatalogModel {
-  static List<Item> items = [
-    // Item(
-    //     id: 1,
-    //     name: "iPhone 12 Pro",
-    //     desc: "Apple  iPhone 12th gen",
-    //     price: 999,
-    //     color: "#33505a",
-    //     image:
-    //         "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=940&hei=1112&fmt=png-alpha&.v=1604343704000"),
-  ];
+  static List<Item> items = [];
+  static Item getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+  static Item getByIdx(int idx) => items[idx];
 }
 
 class Item {

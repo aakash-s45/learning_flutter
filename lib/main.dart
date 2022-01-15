@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures
 
+import 'package:catalog_app/pages/cart_page.dart';
 import 'package:catalog_app/utils/routes.dart';
 import 'package:catalog_app/widgets/theme.dart';
 import 'package:flutter/material.dart';
@@ -32,13 +33,14 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: MyTheme.lightTheme,
-      themeMode: sum,
+      themeMode: ThemeMode.system,
       darkTheme: MyTheme.darkTheme,
       initialRoute: MyRoutes.homeRoute,
       routes: {
         '/': (context) => Login(),
         MyRoutes.homeRoute: (context) => HomePage(sum, fun),
         MyRoutes.loginRoute: (context) => Login(),
+        MyRoutes.cartRoute: (context) => CartPage(),
       },
     );
   }
